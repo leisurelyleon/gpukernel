@@ -20,10 +20,10 @@ export class GpuSimulation {
     this.device = device;
     this.count = count;
 
-    const module = device.createShaderModule({ code: NBODY_WGSL });
+    const shaderModule = device.createShaderModule({ code: NBODY_WGSL });
     this.pipeline = device.createComputePipeline({
       layout: "auto",
-      compute: { module, entryPoint: "main" },
+      compute: { module: shaderModule, entryPoint: "main" },
     });
 
     // Storage buffer holding all particles, seeded with the initial state.
