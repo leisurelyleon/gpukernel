@@ -45,4 +45,4 @@ Static frontend on Vercel — Root Directory = `web`. No backend, no env vars.
 - [x] WGSL compute kernel + GPU pipeline
 - [x] CPU fallback + runtime capability detection
 - [x] GPU vs CPU benchmark
-- [ ] Deployed on Vercel
+- [x] Deployed on Vercel
