@@ -148,3 +148,10 @@ web/out/
 
 # Vercel
 .vercel
+
+# Next.js
+web/.next/
+web/out/
+
+# Vercel
+.vercel
