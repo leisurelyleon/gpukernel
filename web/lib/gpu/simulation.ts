@@ -74,7 +74,7 @@ export class GpuSimulation {
       pass.dispatchWorkgroups(groups);
       pass.end();
     }
-    this.device.queue.submit([encoder.submit ? encoder.finish() : encoder.finish()]);
+    this.device.queue.submit([encoder.finish()]);
   }
 
   /** Step once, then read positions back as a Float32Array for rendering. */
